@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chris — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav>
+      <div class="logo">Chris</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <h1>Hi, I'm Chris</h1>
+    <p>Freshman Mechanical Engineering student at RIT, focused on robotics and embedded systems engineering.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <img src="images/water-dispenser.jpg" alt="Automated Water Dispenser">
+      <h3>Automated Water Dispenser</h3>
+      <p>
+        An Arduino-based system that automatically presses a water dispenser
+        button and stops when the bottle is full, using a servo motor and
+        HC-SR04 ultrasonic sensor for fill detection. Planning an ESP32-CAM +
+        Raspberry Pi expansion to add computer vision.
+      </p>
+      <a href="#">Read more →</a>
+    </div>
+
+    <!-- Add more project-card divs here as you build more projects -->
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <h3>HardyPaw</h3>
+      <p class="role">Warehouse Associate</p>
+      <p>Picking/packing, inventory, and general warehouse operations.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Hwarang — Dublin Chapter</h3>
+      <p class="role">President / Vice President</p>
+      <p>
+        Led community service events, taught Korean language classes, and
+        raised $1000+ for a Guatemala eye surgery camp. Grew chapter
+        membership by 30%.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python/C (In progress)</li>
+      <li>Onshape (CAD Coursework, in progress)</li>
+      <li>Arduino / Ultrasonic Sensors / Servo Motors / Breadboarding</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to reach out? Email me or find me on LinkedIn/GitHub below.</p>
+    <ul class="contact-links">
+      <li><a href="mailto:chrisjung135@gmail.com">Email</a></li>
+      <li><a href="https://github.com/Kqdelol">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/christopher-jung-511080355/">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Chris. Built with HTML & CSS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
