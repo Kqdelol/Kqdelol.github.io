@@ -1,3 +1,5 @@
-# Kqdelol.github.io
+# Chris's Portfolio
 
-Hello World
+My personal portfolio site, built with HTML/CSS.
+
+Live site: https://yourusername.github.io
