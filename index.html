@@ -39,19 +39,47 @@
     <section id="projects">
       <h2>Projects</h2>
 
-      <div class="project-card">
-        <img src="water-dispenser.jpg" alt="Automated Water Dispenser">
-        <h3>Automated Water Dispenser</h3>
-        <p>
-          An Arduino-based system that automatically presses a water dispenser
-          button and stops when the bottle is full, using a servo motor and
-          HC-SR04 ultrasonic sensor for fill detection. Planning an ESP32-CAM +
-          Raspberry Pi expansion to add computer vision.
-        </p>
-        <a href="https://github.com/Kqdelol/Automatic-Water-Dispenser">Read more →</a>
+      <div class="carousel">
+        <button class="carousel-arrow prev" aria-label="Previous project">&#10094;</button>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+
+            <div class="project-card">
+              <img src="water-dispenser.jpg" alt="Automated Water Dispenser">
+              <h3>Automated Water Dispenser</h3>
+              <p>
+                An Arduino-based system that automatically presses a water dispenser
+                button and stops when the bottle is full, using a servo motor and
+                HC-SR04 ultrasonic sensor for fill detection. Planning an ESP32-CAM +
+                Raspberry Pi expansion to add computer vision.
+              </p>
+              <a href="https://github.com/Kqdelol/Automatic-Water-Dispenser">Read more →</a>
+            </div>
+
+            <div class="project-card">
+              <img src="mdrc-project.jpg" alt="MDRC Project">
+              <h3>MDRC Project</h3>
+              <p>
+                <!-- Swap in your real MDRC project description here -->
+                Short description of the MDRC project goes here.
+              </p>
+              <a href="mdrc-project.html">Read more →</a>
+            </div>
+
+            <!-- Add more project-card divs here as you build more projects.
+                 Remember to add a matching dot below for each new slide. -->
+
+          </div>
+        </div>
+
+        <button class="carousel-arrow next" aria-label="Next project">&#10095;</button>
       </div>
 
-      <!-- Add more project-card divs here as you build more projects -->
+      <div class="carousel-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+      </div>
 
     </section>
 
