@@ -100,6 +100,46 @@ section {
 .project-card img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+/* Wraps each project image; clicking it goes to the project link.
+   position: relative lets .image-overlay position itself over the image. */
+.image-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+/* Darkens the image on hover */
+.image-wrap:hover img {
+  filter: brightness(0.6);
+}
+
+.image-wrap img {
+  transition: filter 0.3s ease;
+}
+
+/* "Read more" text that fades in over the darkened image on hover */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrap:hover .image-overlay {
+  opacity: 1;
 }
 
 .carousel-arrow {
