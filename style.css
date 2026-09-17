@@ -65,16 +65,83 @@ section {
   padding: 60px 20px;
 }
 
-/* Center project cards and experience items within their section */
-.project-card,
-.experience-item {
+/* ===== PROJECT CAROUSEL ===== */
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 0 auto;
+}
+
+/* Clips the track so only one slide shows at a time */
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Holds all the slides side by side; sliding it left/right with
+   transform is what creates the smooth switch between projects */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-track .project-card {
+  flex: 0 0 100%; /* each slide takes up the full width of the viewport */
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .project-card img {
   max-width: 100%;
   height: auto;
+}
+
+.carousel-arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.carousel-arrow:hover {
+  color: #000;
+}
+
+/* Dots below the carousel showing which slide is active */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* ===== EXPERIENCE ===== */
+
+.experience-item {
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 /* Center the skills list */
