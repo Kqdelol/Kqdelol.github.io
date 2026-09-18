@@ -7,7 +7,16 @@ body {
   position: relative; /* so .bg-photo can size itself against this element */
   margin: 0;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', -apple-system, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 /* The blurred background photo.
